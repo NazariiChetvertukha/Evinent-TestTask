@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="info" id="info"></div>
+    <div class="buttons">
+        <button id="resetButton">Reset</button>
+        <button id="aboutButton">About</button>
+    </div>
+    <div id="aboutModal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          This is a simple web application that allows users to select four points on the canvas.
+          Based on these points, two circles are drawn, and the intersections of these circles are calculated and displayed.
+          <br><br>Instructions:
+              <li>Click on the canvas to select four points.</li>
+              <li>The first two points will define the center and radius of the first circle.</li>
+              <li>The next two points will define the center and radius of the second circle.</li>
+              <li>Intersections of the two circles will be calculated and displayed.</li>
+              <li>You can drag the points to move them and see the updated circles and intersections.</li>
+              <li>Use the "Reset" button to clear the canvas and start over.</li>
+              <li>Use the "About" button to see this information.</li>
+          <p>Author: Nazarii Chetvertukha</p>
+      </div>
+  </div>
+
+    <canvas id="myCanvas"></canvas>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
